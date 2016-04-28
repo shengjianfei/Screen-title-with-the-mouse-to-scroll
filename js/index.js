@@ -35,8 +35,9 @@
     }
     function MouseOutStatus(obj){
         var item_text=obj.find('span');
-        item_text.animate({ left: '0' }, 100, function () {
-            $(this).hide();
+        $(this).hide();
+        item_text.animate({ left: '0' }, 10, function () {
+            
         });
         obj.find('i').removeClass('big-circle');
         obj.find('i').addClass('small-circle');
